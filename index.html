@@ -4,14 +4,1792 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./Assets/css/output.css">
+    <script src="/srcipt-doc/carsousel.js"></script>
 </head>
-<body>
+<body class="bg-cyan-50">
+<!--------------top navbar-------------->    
+<section class="flex bg-pink-500 justify-end items-center sticky top-0 z-50">
+    <div class="flex text-sm py-2 px-1 text-cyan-800">
+
+        <ul class="flex space-x-2 items-center ">
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              </a></li>
+            <li class=""><a href="" >Get App</a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75v16.5M2.25 12h19.5M6.375 17.25a4.875 4.875 0 004.875-4.875V12m6.375 5.25a4.875 4.875 0 01-4.875-4.875V12m-9 8.25h16.5a1.5 1.5 0 001.5-1.5V5.25a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v13.5a1.5 1.5 0 001.5 1.5zm12.621-9.44c-1.409 1.41-4.242 1.061-4.242 1.061s-.349-2.833 1.06-4.242a2.25 2.25 0 013.182 3.182zM10.773 7.63c1.409 1.409 1.06 4.242 1.06 4.242S9 12.22 7.592 10.811a2.25 2.25 0 113.182-3.182z" />
+              </svg>
+              </a></li>
+            <li class=""><a href="">Gift Card</a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+</svg>
+</a></li>
+            <li class=""><a href="" >Help</a></li>
+
+        </ul>
+    </div>
+</section>
+<!--
+<section class="bg-cyan-100 flex justify-around items-center py-5 px-1">
+    <div>
+        <a href=""><img src="" alt="CF"></a>
+    </div>
+
+    <div>
+        <ul class="flex space-x-7 font-normal text-blue-900 font-serif">
+            <li><a href="" class="uppercase">categories</a></li>
+            <li><a href="" class="uppercase">brands</a></li>
+            <li><a href="" class="uppercase">radiant deals</a></li>
+        </ul>
+    </div>
+
+    <div class="">
+        <div class="relative flex w-full flex-wrap items-stretch">
+          <input
+            type="search"
+            class="relative m-0 -mr-0.5 block w-30 h-8 min-w-0 flex-auto rounded-l border border-solid border-neutral-300
+             bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none
+              transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700
+               focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600
+                dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="button-addon1" />
+      
+       
+          <button
+            class="relative h-8  z-[2] flex items-center rounded-r bg-primary px-6 py-2.5 text-xs font-medium uppercase 
+            leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg 
+            focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+            type="button"
+            id="button-addon1"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor" 
+              class="h-5 w-5">
+              <path
+                fill-rule="evenodd"
+                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+
+    <div>
+        <ul class="flex space-x-4 text-blue-900">
+            <li class="bg-cyan-200 drop-shadow-lg rounded-full p-1"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+              </a></li>
+            <li class="bg-cyan-200 drop-shadow-lg rounded-full p-1"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>              
+              </a></li>
+            <li class="bg-cyan-200 drop-shadow-lg rounded-full p-1"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>              
+              </a></li>
+        </ul>
+    </div>
+</section>
+
+---->
+
+<!-- component -->
+<nav class=" bg-cyan-50  w-full flex justify-around items-center mx-auto  h-20 sticky top-0 z-50 shadow-lg ">
+    <!-- logo -->
+    <div class="inline-flex">
+        <a class="_o6689fn" href="/"
+            ><div class="hidden md:block">
+                <img src="" alt="CF">
+            </div>
+        </a>
+    </div>
+
+    <!-- end logo -->
+
+    <!--menu items-->
+    <div>
+        <ul class="flex space-x-7 font-normal text-blue-900 font-serif">
+            <li><a href="" class="uppercase">categories</a></li>
+            <li><a href="" class="uppercase">brands</a></li>
+            <li><a href="" class="uppercase">radiant deals</a></li>
+        </ul>
+    </div>
+
+
+    <!-- search bar -->
+    <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
+        <div class="inline-block">
+            <div class="inline-flex items-center max-w-full">
+             
+                <button class="flex items-center flex-grow-0 shadow-md  flex-shrink pl-2 relative w-60 border rounded-lg px-1  py-1" type="button">
+                    <div class="block flex-grow flex-shrink overflow-hidden">   <input type="text" name="" placeholder="serach" class="h-25 w-50 outline-0 overflow-hidden font-light text-sm bg-cyan-50 placeholder:serach" id=""></div>
+                    <div class="flex items-center bg-yellow-600 justify-center relative rounded-md   h-8 w-8">
+                        <svg
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            role="presentation"
+                            focusable="false"
+                            style="
+                                display: block;
+                                fill: none;
+                                height: 20px;
+                                width: 20px;
+                                stroke: currentcolor;
+                                stroke-width: 5.33333;
+                                overflow: visible;
+                            "
+                  
+                        >
+                            <g fill="none">
+                                <path
+                                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
+                                ></path>
+                            </g>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end search bar -->
+
+    <!-- login -->
+    <div class="flex-initial">
+      <div class="flex justify-end items-center relative">
+        <div class="flex mr-4 items-center">
+            <ul class="flex space-x-4 text-blue-900">
+                <li class="bg-cyan-200 drop-shadow-lg rounded-full p-1"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                  </svg>
+                  </a></li>
+                <li class="bg-cyan-200 drop-shadow-lg rounded-full p-1"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                  </svg>              
+                  </a></li>
+                <li class="bg-cyan-200 drop-shadow-lg rounded-full p-1"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>              
+                  </a></li>
+            </ul>
+         
+        </div>
+    <!-- end login -->
+</nav>
+
+<section class="bg-white shadow-lg">
+    <ul class="flex text-xs font-serif px-3 py-2 space-x-6 text-blue-400">
+        <li><a href="">Makeup</a></li>
+        <li><a href="">Skin</a></li>
+        <li><a href="">Hair</a></li>
+        <li><a href="">Appliances</a></li>
+        <li><a href="">Bath & Body</a></li>
+        <li><a href="">Naturals</a></li>
+        <li><a href="">Mom & Baby</a></li>
+        <li><a href="">Health & Wellness</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Fragrance</a></li>
+        <li><a href="">salon</a></li>
+        <li><a href="">Pop-ups</a></li>
+    </ul>
+</section>
+
+<!--image -->
+<div
+  class="bg-cover"
+  style="background-image: url('b4.jpeg'); height: 400px">
+</div>
+
+<!-- component -->
+<!---------------------------------------------------------------------------------------------->
+<div class="flex">
+
+    <!--left menu bar-->
+
+  <ul class="flex flex-col gap-2 max-w-[280px]  my-15 mx-5 bg-cyan-50 shadow-xl rounded-lg py-5 px-3 text-xs">
+    <div class="bg-white opacity-50 flex justify-center rounded-lg py-1 mt-3">
+    <p class="py-1 w-100 font-semibold font-serif">Filter</p>
+    </div>
+
+
+    <div class="bg-white flex justify-between shadow-lg text-blue-800 rounded-lg py-2 px-4">
+        <p class="w-100 text-sm ">CHOOSE</p>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+              </svg>
+              
+         </div>
+    </div>
     
-    <h3 class="text-red-200 font-semibold">Hello</h3>
 
-    <p class="justify-center items-center text-red-50">next page</p>
+      <div class="bg-white rounded-md font-serif text-pink-700
+">    
 
-    <p></p>
+<li>
+    <details class="group bg-white shadow-lg border-b-[3px]">
+
+        <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Price
+
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+
+                <ul class="flex flex-col gap-4 pl-2 mt-4">
+
+                    <li class="flex gap-2 text-black hover:text-yellow-700">
+                        <a href="http://127.0.0.1:8000/user/dashboard">
+                            Dashboard
+                        </a>
+                    </li>
+
+
+                    <li class="flex gap-2">
+                     <a href="http://127.0.0.1:8000/user/study-lists">
+                            Study Lists
+                        </a>
+                    </li>
+
+
+                    <li class="flex gap-2">
+                     <a href="http://127.0.0.1:8000/user/contribution">
+                            Your contribution
+                        </a>
+                    </li>
+
+
+                    <li class="flex gap-2">
+                        <a href="http://127.0.0.1:8000/user/settings">
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Category
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Price
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Category
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Discount
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Avg Customer Rating
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Color
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        preference
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Country of Origin
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Finish
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                       Formulation
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Concern
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Ingredient
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Coverage
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Skin Tone
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+    <li>
+        <details class="group  bg-white shadow-lg rounded-md border-b-[3px]">
+
+            <summary
+                class="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
+
+                <span class="flex gap-2">
+                        Pack Size
+                </span>
+                <svg class="w-5 h-5 text-gray-500 transition group-open:rotate-90" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                </svg>
+            </summary>
+
+            <article class="px-4 pb-4">
+                <ul class="flex flex-col gap-1 pl-2">
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                    <li><a href="">Document title</a></li>
+                </ul>
+            </article>
+
+        </details>
+    </li>
+
+
+      </div>
+  </ul>
+
+<ul class="flex-col ml-5 mt-12 bg-cyan-50 drop-shadow-2xl h-20  py-8 rounded-lg items-center w-[82%]">
+    <li class="flex justify-between space-x-5 rounded-lg items-center px-4">
+        <p class=""><a href="">200 Items Found</a></p>
+       
+          <div class="flex space-x-1 px-1 items-center">
+            <p class="text-sm mr-6 ">Sort by</p>
+            <div class="flex space-x-2 bg-cyan-100 shadow-lg py-1 px-2">
+            <p class="text-sm">CHOOSE</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+              </svg>
+            </div>
+            </div>
+    </li>
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+
+    <li class="grid grid-cols-3 gap-x-8 gap-y-14 mt-16 ml-10">
+        <div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+                <div class="flex justify-between  ">
+                   <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+                   <div class="flex space-x-6 py-1 px-3 text-purple-950">
+                     <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                      </svg>
+                      </a>
+                     </p>
+
+                     <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                      </svg>
+                      </a>
+                        </p>
+                    </div>
+                </div>
+
+            <a href="#">
+                <img src="./images/hydra-facial-1.png"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+                        
+               <div class="flex-col mt-2">
+                <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+                <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+                    <path d="M7 9l11 0"></path>
+                 </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+                  
+                 <div class="flex justify-center items-center mt-3 mb-3">
+                    <ul class="flex flex-row space-x-1">
+                        <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                             opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+                          </li>
+
+                          <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                            opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+                          </li>
+
+                          <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
+                          </li>
+
+                          <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
+                          </li>
+                    </ul>
+
+                 </div>
+
+
+               </div>
+            </a>
+        </div>
+
+        <div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+            <div class="flex justify-between  ">
+               <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+               <div class="flex space-x-6 py-1 px-3 text-purple-950">
+                 <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                  </svg>
+                  </a>
+                 </p>
+
+                 <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                  </svg>
+                  </a>
+                    </p>
+                </div>
+            </div>
+
+        <a href="#">
+            <img src="./images/hydra-facial-1.png"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+                    
+           <div class="flex-col mt-2">
+            <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+            <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+                <path d="M7 9l11 0"></path>
+             </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+              
+             <div class="flex justify-center items-center mt-3 mb-3">
+                <ul class="flex flex-row space-x-1">
+                    <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                         opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+                      </li>
+
+                      <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                        opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+                      </li>
+
+                      <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>
+                      </li>
+
+                      <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>
+                      </li>
+                </ul>
+
+             </div>
+
+
+           </div>
+        </a>
+    </div>
+
+
+    <div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+        <div class="flex justify-between  ">
+           <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+           <div class="flex space-x-6 py-1 px-3 text-purple-950">
+             <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>
+              </a>
+             </p>
+
+             <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+              </a>
+                </p>
+            </div>
+        </div>
+
+    <a href="#">
+        <img src="./images/hydra-facial-1.png"
+                alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+                
+       <div class="flex-col mt-2">
+        <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+        <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+            <path d="M7 9l11 0"></path>
+         </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+          
+         <div class="flex justify-center items-center mt-3 mb-3">
+            <ul class="flex flex-row space-x-1">
+                <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                     opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+                  </li>
+
+                  <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                    opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+                  </li>
+
+                  <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  </li>
+
+                  <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+                  </li>
+            </ul>
+
+         </div>
+
+
+       </div>
+    </a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+   </div>
+</a>
+</div>
+
+
+<div class="w-72  shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl bg-cyan-50">
+
+    <div class="flex justify-between  ">
+       <p class="bg-pink-400 rounded-t-lg rounded-br-lg py-1 shadow-lg opacity-80 text-xs font-semibold text-white px-3">Best selling</p>
+       <div class="flex space-x-6 py-1 px-3 text-purple-950">
+         <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+          </a>
+         </p>
+
+         <p> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 hover:text-pink-700 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          </a>
+            </p>
+        </div>
+    </div>
+
+<a href="#">
+    <img src="./images/hydra-facial-1.png"
+            alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />      
+            
+   <div class="flex-col mt-2">
+    <p class=" flex justify-center font-mono">7IN1 Hydra Facial Machine</p>
+    <p class="flex justify-center items-center mt-2 ">MRP: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+        <path d="M7 9l11 0"></path>
+     </svg> 29,000   <span class="bg-pink-200 shadow-lg ml-2 px-2 py-1 rounded-lg text-xs text-purple-700 ">21% OFF</span></p>
+      
+     <div class="flex justify-center items-center mt-3 mb-3">
+        <ul class="flex flex-row space-x-1">
+            <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)"
+                 opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg"  class="w-4 h-4" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="star"><rect width="24" height="24" transform="rotate(90 12 12)" 
+                opacity="0"/><path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z"/></g></g></svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              </li>
+        </ul>
+
+     </div>
+
+
+    </div>
+  </a>
+   </div>
+
+<div class="flex items-center mb-10">
+
+    <div>
+        <p class="px-5 text-indigo-800 font-semibold">Page 1 of 5 </p>
+    </div>
+    
+    <nav aria-label="Page navigation">
+        <ul class="inline-flex space-x-2">
+          <li><button class="flex items-center justify-center w-10 h-10 border-2 border-indigo-600 text-indigo-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-indigo-100">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button>
+          </li>
+
+          <li><button class="w-10 h-10 text-indigo-600 bg-gray-100  border border-r-0 border-gray-100 shadow-lg transition-colors duration-150 rounded-full focus:bg-white hover:shadow-lg">1</button></li>
+          <li><button class="w-10 h-10 text-indigo-600 transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-indigo-100">2</button></li>
+          <li><button class="w-10 h-10 text-indigo-600 transition-colors  rounded-full focus:shadow-outline hover:bg-indigo-100">3</button></li>
+
+          <li><button class="flex items-center justify-center w-10 h-10  transition-colors duration-150 border-2 border-indigo-600 text-indigo-600  rounded-full focus:shadow-outline hover:bg-indigo-100">
+            <svg class="w-4 h-4 fill-current " viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button>
+          </li>
+        </ul>
+      </nav> 
+</div>
+     </li>
+    </ul>
+    <ul>
+  </ul>  
+</div>
+
+
+ <div class="mt-[135%] bg-pink-100 rounded-t-2xl px-6 py-8">
+  
+    <div class="grid grid-cols-4 gap-4 ">
+        <div class="">
+            <img src="./images/image-3.png"  class="w-16 h-19" alt="">
+            <p class="uppercase text-xs font-serif">experience the cinema factory mobile app</p>
+
+            <div class="flex justify-center items-center mr-28 mt-2">
+                <img src="./images/a.png" class="w-24 h-15 ml-3" alt="">
+                <img src="./images/a.png" class="w-24 h-15" alt="">
+            </div>
+        </div>
+        <div class="..."> 
+            <h2 class="text-lg font-semibold text-indigo-800 uppercase font-sans">special</h2>
+            <ul>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">featured products</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">latest products</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">best selling products</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">top rated products</a></li>
+            </ul>
+        </div>
+        <div class="...">
+            <h2 class="text-lg font-semibold text-indigo-800 uppercase font-sans">account & shipping info</h2>
+            <ul>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">profile info</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">track order</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">refund policy</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">return policy</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">cancellation policy</a></li>
+                <li><a href="" class="uppercase text-xs font-serif hover:text-blue-700">shipping policy</a></li>
+            </ul>
+        </div>
+        <div class="...">
+            <h2 class="text-lg font-semibold text-indigo-800 uppercase font-sans">news letter</h2>
+            <ul>
+                <li><a href="" class="uppercase text-xs font-serif ">subscribe to our news channel to get latest updates</a></li>
+              <div class="w-72 bg-slate-600 rounded-xl items-center mt-5">
+                <input type="text" class="bg-gray-200 border-0 focus:border-0 rounded-tl-lg rounded-bl-lg py-2 px-5 text-xs outline-none	 "  placeholder="enter Your Email">
+                <button class="uppercase inline-block ml-3 ">subscribe</button>
+              </div>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-navbar text-purple-800">
+    <div class="grid grid-cols-3 gap-4 ml-16 py-2">
+        <div class="...">cinema factory 2023</div>
+        <div class="...">
+            <ul class="flex space-x-8 ">
+                <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                 </svg>
+                  </a></li>
+
+                  <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                 </svg>
+                  </a></li>
+
+                  
+                  <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                 </svg>
+                  </a></li>
+
+                  
+                  <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-pinterest" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 20l4 -9"></path>
+                    <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                 </svg>
+                  </a></li>
+
+                  <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M16.5 7.5l0 .01"></path>
+                 </svg>
+                  </a></li>
+            </ul>
+        </div>
+
+        <div class="...">
+            <ul class="flex space-x-7">
+                <li><a href="">about us</a></li>
+                <li><a href="">terms & conditions</a></li>
+                <li><a href="">privacy policy</a></li>
+            </ul>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+   
+    
+
+   
+
+
+   
+
+   
+
+
+
+
+
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+<script>
+    kofiWidgetOverlay.draw('mohamedghulam', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+</script>
 </body>
 </html>
